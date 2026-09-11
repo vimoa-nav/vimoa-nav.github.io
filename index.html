@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="ViMoA: Vision-Motion-to-Action Flow Matching for Visual Navigation."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vimoa-nav.github.io/" />
+    <meta property="og:title" content="ViMoA: Vision-Motion-to-Action Flow Matching for Visual Navigation" />
+    <meta
+      property="og:description"
+      content="A latent flow matching policy that fuses visual context and recent motion history for visual navigation."
+    />
+    <meta property="og:image" content="https://vimoa-nav.github.io/static/images/social-card.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>ViMoA: Vision-Motion-to-Action Flow Matching for Visual Navigation</title>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans" rel="stylesheet" />
+    <link rel="icon" href="static/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <h1>ViMoA: Vision-Motion-to-Action Flow Matching for Visual Navigation</h1>
+        </div>
+      </section>
+
+      <section class="section" id="abstract">
+        <div class="container content-container">
+          <h2 class="section-title">Abstract</h2>
+          <p class="abstract">
+            Diffusion models and flow matching have emerged as promising generative paradigms for waypoint generation in visual navigation. However, existing methods typically generate local waypoints from Gaussian noise or separately constructed prior trajectories. Gaussian noise differs substantially from feasible trajectory distributions, while inaccurate prior trajectories can degrade generated trajectory quality. We propose <strong>ViMoA</strong>, a latent flow matching policy that fuses visual context and recent motion history into an informative source latent for navigation action generation. To bridge the representation gap between task-informed source features and low-dimensional waypoint actions, ViMoA represents future actions as latent features matching the source dimensionality, enabling flow matching in a shared latent space. Since the source already contains navigation-relevant visual and motion information, it provides an informative initialization for transport toward future actions and eliminates repeated condition injection during flow integration. To improve navigation safety, ViMoA incorporates traversability constraints into both visual representations and waypoint constraints. The enhanced visual representation improves obstacle awareness, while the waypoint constraint penalizes predictions in regions with low traversability. Experiments in simulated and real-world environments show that ViMoA achieves higher navigation success, fewer collisions, and better trajectory quality than representative baselines.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-light" id="videos">
+        <div class="container">
+          <h2 class="section-title">Real-World Navigation</h2>
+          <p class="section-subtitle">ViMoA navigates challenging indoor and outdoor environments using only RGB observations as visual input.</p>
+
+          <div class="video-grid">
+            <figure>
+              <video controls playsinline preload="metadata" poster="static/images/indoor-poster.jpg">
+                <source src="static/videos/indoor_demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <figcaption><strong>Indoor navigation.</strong> Narrow passages, turns, and obstacle avoidance.</figcaption>
+            </figure>
+
+            <figure>
+              <video controls playsinline preload="metadata" poster="static/images/outdoor-poster.jpg">
+                <source src="static/videos/outdoor_demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <figcaption><strong>Outdoor navigation.</strong> Long-range navigation in vegetation-rich environments.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="method">
+        <div class="container">
+          <h2 class="section-title">Method</h2>
+          <p class="section-subtitle">
+            ViMoA constructs a vision-motion source latent, transports it toward a target action latent in a shared space, and incorporates traversability constraints at both the representation and waypoint levels.
+          </p>
+
+          <figure class="paper-figure method-figure">
+            <img
+              src="static/images/method-overview.webp"
+              alt="Overview of ViMoA, including vision-motion source construction, action latent transport, traversability constraints, and real-world navigation"
+              loading="lazy"
+            />
+            <figcaption>
+              <strong>Overview of ViMoA.</strong> Visual context and recent motion history form an informative source latent. An action autoencoder defines the target latent space, while traversability constraints improve obstacle awareness and discourage unsafe waypoints.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>
