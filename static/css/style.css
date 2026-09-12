@@ -78,10 +78,10 @@ h1 {
 
 .section-title {
   margin: 0 0 20px;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 34px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.125;
   text-align: center;
 }
 
@@ -165,7 +165,7 @@ figcaption strong {
   }
 
   .section-title {
-    font-size: 30px;
+    font-size: 32px;
   }
 
 }
