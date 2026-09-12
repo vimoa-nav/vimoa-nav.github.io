@@ -42,7 +42,7 @@
       <section class="section section-light" id="videos">
         <div class="container">
           <h2 class="section-title">Real-World Navigation</h2>
-          <p class="section-subtitle">ViMoA navigates challenging indoor and outdoor environments using only RGB observations as visual input.</p>
+          <p class="section-subtitle">ViMoA navigates challenging indoor and outdoor environments.</p>
 
           <div class="video-grid">
             <figure>
@@ -58,7 +58,7 @@
                 <source src="static/videos/outdoor_demo.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
-              <figcaption><strong>Outdoor navigation.</strong> Long-range navigation in vegetation-rich environments.</figcaption>
+              <figcaption><strong>Outdoor navigation.</strong> Long-range navigation in challenging environments.</figcaption>
             </figure>
           </div>
         </div>
@@ -68,7 +68,7 @@
         <div class="container">
           <h2 class="section-title">Method</h2>
           <p class="section-subtitle">
-            ViMoA constructs a vision-motion source latent, transports it toward a target action latent in a shared space, and incorporates traversability constraints at both the representation and waypoint levels.
+            ViMoA constructs a vision-motion source latent, transports it toward a target action latent in a shared latent space, and incorporates traversability constraints at both the representation and waypoint levels.
           </p>
 
           <figure class="paper-figure method-figure">
@@ -77,9 +77,6 @@
               alt="Overview of ViMoA, including vision-motion source construction, action latent transport, traversability constraints, and real-world navigation"
               loading="lazy"
             />
-            <figcaption>
-              <strong>Overview of ViMoA.</strong> Visual context and recent motion history form an informative source latent. An action autoencoder defines the target latent space, while traversability constraints improve obstacle awareness and discourage unsafe waypoints.
-            </figcaption>
           </figure>
         </div>
       </section>
