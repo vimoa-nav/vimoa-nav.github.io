@@ -134,15 +134,25 @@ video {
 }
 
 figcaption {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.35em;
   margin-top: 10px;
   color: var(--muted);
   font-size: 14px;
   line-height: 1.45;
-  text-align: center;
+  text-align: left;
 }
 
 figcaption strong {
+  flex: 0 0 auto;
   color: var(--text);
+}
+
+.caption-description {
+  min-width: 0;
+  text-align: left;
 }
 
 .paper-figure {
