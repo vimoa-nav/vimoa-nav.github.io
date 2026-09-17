@@ -19,7 +19,7 @@
     <title>ViMoA: Vision-Motion-to-Action Flow Matching for Visual Navigation</title>
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans" rel="stylesheet" />
     <link rel="icon" href="static/images/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="static/css/style.css?v=20260917-5" />
+    <link rel="stylesheet" href="static/css/style.css?v=20260917-6" />
   </head>
 
   <body>
@@ -123,17 +123,34 @@
       <section class="section" id="qualitative-results">
         <div class="container">
           <h2 class="section-title">Qualitative Results</h2>
-          <p class="section-subtitle">
-            Qualitative comparison of real-world navigation trajectories in representative indoor and outdoor scenarios, with trajectories from the baselines and our method overlaid on reconstructed scenarios.
-          </p>
 
-          <figure class="paper-figure qualitative-figure">
-            <img
-              src="static/images/qualitative-comparison.webp?v=20260917"
-              alt="Qualitative comparison of indoor and outdoor real-world navigation trajectories from baseline methods and ViMoA"
-              loading="lazy"
-            />
-          </figure>
+          <div class="qualitative-item">
+            <p class="section-subtitle qualitative-description">
+              Experimental platform and qualitative comparison of waypoint predictions in real-world environments. The left panel shows the platform and devices, while the lower-left panels illustrate a navigation case comparing ViMoA and FlowNav. The right panels compare first-person waypoint predictions in representative indoor and outdoor scenarios. Boxes colored green, blue, and orange denote good, acceptable, and poor predictions, respectively.
+            </p>
+
+            <figure class="paper-figure qualitative-figure">
+              <img
+                src="static/images/platform-waypoint-comparison.webp?v=20260917"
+                alt="Experimental platform and qualitative comparison of waypoint predictions from baseline methods and ViMoA"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+
+          <div class="qualitative-item">
+            <p class="section-subtitle qualitative-description">
+              Qualitative comparison of real-world navigation trajectories in representative indoor and outdoor scenarios, with trajectories from the baselines and our method overlaid on reconstructed scenarios.
+            </p>
+
+            <figure class="paper-figure qualitative-figure">
+              <img
+                src="static/images/qualitative-comparison.webp?v=20260917"
+                alt="Qualitative comparison of indoor and outdoor real-world navigation trajectories from baseline methods and ViMoA"
+                loading="lazy"
+              />
+            </figure>
+          </div>
         </div>
       </section>
 

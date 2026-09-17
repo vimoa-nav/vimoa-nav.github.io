@@ -170,6 +170,19 @@ figcaption strong {
   background: #fff;
 }
 
+.qualitative-description {
+  max-width: 960px;
+  margin-bottom: 24px;
+}
+
+.qualitative-figure {
+  margin-top: 0;
+}
+
+.qualitative-item + .qualitative-item {
+  margin-top: 48px;
+}
+
 @media (max-width: 700px) {
   .hero {
     padding-top: 42px;
