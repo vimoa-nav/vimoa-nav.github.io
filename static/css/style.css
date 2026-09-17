@@ -175,6 +175,22 @@ figcaption strong {
   margin-bottom: 24px;
 }
 
+.prediction-color {
+  font-weight: 500;
+}
+
+.prediction-color-green {
+  color: #88bd6a;
+}
+
+.prediction-color-blue {
+  color: #7298d0;
+}
+
+.prediction-color-orange {
+  color: #eea06d;
+}
+
 .qualitative-figure {
   margin-top: 0;
 }
