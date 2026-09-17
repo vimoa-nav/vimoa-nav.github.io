@@ -170,6 +170,19 @@ figcaption strong {
   background: #fff;
 }
 
+.qualitative-figure {
+  margin-top: 42px;
+}
+
+.paper-caption {
+  display: block;
+  max-width: 920px;
+  margin: 12px auto 0;
+  font-size: 14px;
+  line-height: 1.55;
+  text-align: center;
+}
+
 @media (max-width: 700px) {
   .hero {
     padding-top: 42px;
