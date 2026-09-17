@@ -45,6 +45,10 @@ video {
   margin: 0 auto;
 }
 
+.demos-container {
+  width: min(100% - 40px, 1200px);
+}
+
 .content-container {
   max-width: 900px;
 }
@@ -140,7 +144,7 @@ figcaption {
   gap: 0.35em;
   margin-top: 10px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: clamp(12px, 1.15vw, 14px);
   line-height: 1.45;
   text-align: left;
 }
